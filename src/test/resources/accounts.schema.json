@@ -5,6 +5,11 @@
   "items": {
     "type": "object",
     "additionalProperties": false,
+    "patternProperties": {
+      "currency": {
+        "enum": ["RUR", "USD"]
+      }
+    },
     "required": [
       "id",
       "name",
